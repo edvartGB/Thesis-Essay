@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{Omerovic2023}
+S.~Omerovic and A.~Jain, {\em Echocardiogram}.
+\newblock Treasure Island (FL): StatPearls Publishing, updated 2023 jul 24~ed., 2025.
+
+\bibitem{RealTimeRendering}
+T.~Akenine-M{\"o}ller, E.~Haines, and N.~Hoffman, {\em Real-Time Rendering}.
+\newblock CRC Press, 4~ed., 2019.
+\newblock [Originally published in 2008].
+
+\bibitem{learnopengl_figure}
+J.~de~Vries, ``Figure from learnopengl: [vertex transforms].'' Online, 2025.
+\newblock Licensed under CC BY-NC 4.0. Accessed: 28-Mar-2025.
+
+\end{thebibliography}
