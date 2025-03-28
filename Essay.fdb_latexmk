@@ -1,15 +1,16 @@
 # Fdb version 4
-["bibtex Essay"] 1743166413.81319 "Essay.aux" "Essay.bbl" "Essay" 1743166414.62648 0
+["bibtex Essay"] 1743166880.73857 "Essay.aux" "Essay.bbl" "Essay" 1743166881.55599 0
   "./references.bib" 1743163198.82557 1441 0d05ecea94c9b7461d05215a0e9a27fe ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Essay.aux" 1743166414.43839 1712 a84b73ec8996965142a00ac7c31073e5 "pdflatex"
+  "Essay.aux" 1743166881.33946 2028 aaa52aa7838a483653fd8487465e8a0f "pdflatex"
   (generated)
   "Essay.bbl"
   "Essay.blg"
   (rewritten before read)
-["pdflatex"] 1743166413.9031 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1743166414.62663 0
-  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1743166412.85995 7175 ead9303c0b7bdbfe56964ddb31cd2716 ""
+["pdflatex"] 1743166880.82387 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1743166881.55611 0
+  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1743166879.77461 7301 d26dc217dd041f2e332ade889a093a61 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -22,6 +23,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -74,9 +76,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1739880055.52668 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1739879966 8221426 3bd77e9a42bd20074ffe464f13ccdb98 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Essay.aux" 1743166414.43839 1712 a84b73ec8996965142a00ac7c31073e5 "pdflatex"
-  "Essay.bbl" 1743166413.90162 558 aab03354dbadaa7cd515ea1707d21f22 "bibtex Essay"
-  "Essay.tex" 1743166412.85995 7175 ead9303c0b7bdbfe56964ddb31cd2716 ""
+  "Essay.aux" 1743166881.33946 2028 aaa52aa7838a483653fd8487465e8a0f "pdflatex"
+  "Essay.bbl" 1743166880.82244 558 aab03354dbadaa7cd515ea1707d21f22 "bibtex Essay"
+  "Essay.tex" 1743166879.77461 7301 d26dc217dd041f2e332ade889a093a61 ""
   "images/VolumeRendering.png" 1743166285.65589 383319 74a4b831f58027061e4c8941ca9472a0 ""
   "images/coordinate_systems.png" 1743163290.6817 41397 64519dd639c0e16c2b45d89193928c05 ""
   "images/graphics_pipeline.png" 1743164567.81193 144059 9733c790cc5c9bbdb20ed5a6170f4b33 ""
