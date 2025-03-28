@@ -102,7 +102,26 @@ may also be used to visualize three-dimensional scientific data, like that captu
     \label{fig:forearmCT}
 \end{figure}
 
-\subsubsection{Slice planes}
+\subsubsection{Volume Data Representation}
+
+\newpage
+\subsubsection{Cut Planes}
+A simple way to render volumetric data is reduce the problem to two dimensions, by only rendering a single \textit{slice} of the data
+at once. This can be achieved by rendering a plane placed such that it intersects with the bounding volume of the 
+data set. In the fragment shader, the world space position of each fragment is used to sample the volumetric data set.
+The sampled value can then be used to determine the final color of the pixel via some transfer function.
+\begin{figure}[tbh]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/CutPlanes.png}
+    \caption{Volume rendering of an MRI dataset using three cut planes.}
+    \label{fig:cutPlanes}
+\end{figure}
+
+
+This method is easy to implement and interpret, requiring only a simple modification to the fragment shader. 
+
+
+
 
 \subsubsection{Ray Marching}
 

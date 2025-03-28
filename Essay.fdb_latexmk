@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Essay"] 1743166880.73857 "Essay.aux" "Essay.bbl" "Essay" 1743166881.55599 0
+["bibtex Essay"] 1743169026.78069 "Essay.aux" "Essay.bbl" "Essay" 1743169027.66939 0
   "./references.bib" 1743163198.82557 1441 0d05ecea94c9b7461d05215a0e9a27fe ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Essay.aux" 1743166881.33946 2028 aaa52aa7838a483653fd8487465e8a0f "pdflatex"
+  "Essay.aux" 1743169027.47029 2350 a412bc9ee8afe98259dfb17ed68b2ada "pdflatex"
   (generated)
   "Essay.bbl"
   "Essay.blg"
   (rewritten before read)
-["pdflatex"] 1743166880.82387 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1743166881.55611 0
-  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1743166879.77461 7301 d26dc217dd041f2e332ade889a093a61 ""
+["pdflatex"] 1743169026.8656 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1743169027.66951 0
+  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1743169025.72354 8151 755d2cdf72160c68abb8f754db35a69a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -76,9 +76,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1739880055.52668 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1739879966 8221426 3bd77e9a42bd20074ffe464f13ccdb98 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Essay.aux" 1743166881.33946 2028 aaa52aa7838a483653fd8487465e8a0f "pdflatex"
-  "Essay.bbl" 1743166880.82244 558 aab03354dbadaa7cd515ea1707d21f22 "bibtex Essay"
-  "Essay.tex" 1743166879.77461 7301 d26dc217dd041f2e332ade889a093a61 ""
+  "Essay.aux" 1743169027.47029 2350 a412bc9ee8afe98259dfb17ed68b2ada "pdflatex"
+  "Essay.bbl" 1743169026.86412 558 aab03354dbadaa7cd515ea1707d21f22 "bibtex Essay"
+  "Essay.tex" 1743169025.72354 8151 755d2cdf72160c68abb8f754db35a69a ""
+  "images/CutPlanes.png" 1743168809.14167 338487 3d2e699f6f416b75e5af1673ecfc7c7f ""
   "images/VolumeRendering.png" 1743166285.65589 383319 74a4b831f58027061e4c8941ca9472a0 ""
   "images/coordinate_systems.png" 1743163290.6817 41397 64519dd639c0e16c2b45d89193928c05 ""
   "images/graphics_pipeline.png" 1743164567.81193 144059 9733c790cc5c9bbdb20ed5a6170f4b33 ""

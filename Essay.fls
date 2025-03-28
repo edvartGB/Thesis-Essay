@@ -132,6 +132,11 @@ INPUT ./images/VolumeRendering.png
 INPUT ./images/VolumeRendering.png
 INPUT ./images/VolumeRendering.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./images/CutPlanes.png
+INPUT ./images/CutPlanes.png
+INPUT ./images/CutPlanes.png
+INPUT ./images/CutPlanes.png
+INPUT ./images/CutPlanes.png
 INPUT ./Essay.bbl
 INPUT ./Essay.bbl
 INPUT Essay.bbl
