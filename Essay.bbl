@@ -13,4 +13,11 @@ T.~Akenine-M{\"o}ller, E.~Haines, and N.~Hoffman, {\em Real-Time Rendering}.
 J.~de~Vries, ``Figure from learnopengl: [vertex transforms].'' Online, 2025.
 \newblock Licensed under CC BY-NC 4.0. Accessed: 28-Mar-2025.
 
+\bibitem{Kruger2006GPU}
+J.~Krüger and R.~Westermann, ``{GPU}-based interactive visualization techniques,'' in {\em Proceedings of IEEE Visualization 2006}, pp.~13--20, IEEE, 2006.
+
+\bibitem{Hofmann2011}
+F.~Hofmann, ``Volume ray casting,'' 2011.
+\newblock CC BY-SA 3.0, via Wikimedia Commons.
+
 \end{thebibliography}

@@ -120,10 +120,40 @@ The sampled value can then be used to determine the final color of the pixel via
 
 This method is easy to implement and interpret, requiring only a simple modification to the fragment shader. 
 
+\subsubsection{Volume Ray Casting}
+Volume Ray Casting is a rendering technique used to directly render volumetric scalar fields.
+Intuitively, a ray is projected from each pixel into the volume,
+and the scalar field is iteratively sampled along each ray to compute the pixel values.
+This algorithm approximates the volume rendering rendering integral by computing the Discrete Volume Rendering Integral (DVRI) 
+
+$$ I(D) = \sum_{i=0}^n C_iA_i\prod_{j=i+1}^{n}(1-A_j)$$
+Where $I$ is the accumulated intensity for a given pixel with total ray depth $D$.
+$C_i$ and $A_i$ represent the intensities and opacities sampled along the ray, respectively. This
+can be extended to color images by performing the same algorithm for each channel in the color image (RGB).
+
+If ray-casting is performed front-to-back, the algorithm takes the following form \cite{Kruger2006GPU}
+$$ C_{dst} \leftarrow C_{dst} + (1-\alpha_{dst})C_{src} $$
+$$ \alpha_{dst} \leftarrow \alpha_{dst} + (1-\alpha_{dst})\alpha_{src}$$
+Here, the \textit{destination} color $C_{dst}$ and opacity $A_{dst}$ are computed by 
+\textit{compositing} the result from the previous iteration with the \textit{source} values, sampled at the current ray segment. To sample arbitrary positions with the volume, trilinear interpolation is used. A shading model may also be applied during ray traversal,
+and this typically requires computing the gradients of the scalar field.
+
+Transfer functions are used to map data values from the 3D scalar field to colors and opacities. The choice of transfer function
+depends on the desired visualization and may require expert insight into the nature of the underlying data.
+The steps of the volume ray casting algorithm are demonstrated in figure \ref{fig:volumeRayCasting}.
+
+\begin{figure}[tbh]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/Volume_ray_casting.png}
+    \caption{Volume ray casting. The generated ray for a given fragment is shown in (1), passing through the discrete scalar field. In (2), data values are sampled along the ray. Then, a transfer function and shading model are applied at each sample (3) to compute color and opacity values. Finally, the pixel value
+    is computed through compositing (4) \cite{Hofmann2011}.}
+    \label{fig:volumeRayCasting}
+\end{figure}
 
 
-
-\subsubsection{Ray Marching}
+This algorithm can be implemented on the GPU by conforming to the traditional rasterization pipeline by using \textit{proxy geometries}.
+The proxy geometries are placed such that the rasterized pixels cover the projection of the scalar field in view space. Thus,
+the ray casting algorithm can be implemented directly in the fragment shader used for these geometries. 
 
 \subsubsection{Transparency}
 (Write about ray termination and rendering order)
