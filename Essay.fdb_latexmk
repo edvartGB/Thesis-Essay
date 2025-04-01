@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Essay"] 1743503526.46233 "Essay.aux" "Essay.bbl" "Essay" 1743503619.25115 0
+["bibtex Essay"] 1743504214.91958 "Essay.aux" "Essay.bbl" "Essay" 1743504215.86381 0
   "./references.bib" 1743503073.30155 2002 a86b57908189146c3c3ce8dd10cd2d4f ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Essay.aux" 1743503619.02564 2988 c7cd597a34c41c42e17a25bf67c4f47b "pdflatex"
+  "Essay.aux" 1743504215.664 2754 79bf06174c99ca541b44d6b60fccff25 "pdflatex"
   (generated)
   "Essay.bbl"
   "Essay.blg"
   (rewritten before read)
-["pdflatex"] 1743503618.34939 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1743503619.25129 0
-  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1743503618.14786 10778 be1d2bb9f8995cc6be35678dd978ffc8 ""
+["pdflatex"] 1743504215.00433 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1743504215.86393 0
+  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1743504213.76262 10645 b9f4dbbb7ff551cf4c037beab3c0e6d0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -81,9 +81,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1739880055.52668 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1739879966 8221426 3bd77e9a42bd20074ffe464f13ccdb98 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Essay.aux" 1743503619.02564 2988 c7cd597a34c41c42e17a25bf67c4f47b "pdflatex"
-  "Essay.bbl" 1743503526.55055 852 01f52f9d3e2674f5df4c53b27da1ea6d "bibtex Essay"
-  "Essay.tex" 1743503618.14786 10778 be1d2bb9f8995cc6be35678dd978ffc8 ""
+  "Essay.aux" 1743504215.664 2754 79bf06174c99ca541b44d6b60fccff25 "pdflatex"
+  "Essay.bbl" 1743504215.00281 852 01f52f9d3e2674f5df4c53b27da1ea6d "bibtex Essay"
+  "Essay.tex" 1743504213.76262 10645 b9f4dbbb7ff551cf4c037beab3c0e6d0 ""
   "images/CutPlanes.png" 1743168809.14167 338487 3d2e699f6f416b75e5af1673ecfc7c7f ""
   "images/VolumeRendering.png" 1743166285.65589 383319 74a4b831f58027061e4c8941ca9472a0 ""
   "images/Volume_ray_casting.png" 1743503107.59327 95276 4217ef453a1ff443dd590613fed08a21 ""
