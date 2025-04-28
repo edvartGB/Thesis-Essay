@@ -105,17 +105,15 @@ may also be used to visualize three-dimensional scientific data, like that captu
 \subsubsection{Cut Planes}
 A simple way to render volumetric data is reduce the problem to two dimensions, by only rendering a single \textit{slice} of the data
 at once. This can be achieved by rendering a plane placed such that it intersects with the bounding volume of the 
-data set. In the fragment shader, the world space position of each fragment is used to sample the volumetric data set.
-The sampled value can then be used to determine the final color of the pixel via some transfer function.
+data set. 
 \begin{figure}[tbh!]
     \centering
     \includegraphics[width=0.5\textwidth]{images/CutPlanes.png}
     \caption{Volume rendering of an MRI dataset using three cut planes.}
     \label{fig:cutPlanes}
 \end{figure}
-
-
-This method is easy to implement and interpret, requiring only a simple modification to the fragment shader. 
+In the fragment shader, the world space position of each fragment is used to sample the volumetric data set. The sampled value can then be used to determine the final color of the pixel via some transfer function.
+This method is interpret and implement in the rasterization pipeline, requiring only a simple modification to the fragment shader. 
 
 \subsubsection{Volume Ray Casting}
 Volume Ray Casting is a rendering technique used to directly render volumetric scalar fields.
@@ -139,6 +137,8 @@ Transfer functions are used to map data values from the 3D scalar field to color
 depends on the desired visualization and may require expert insight into the nature of the underlying data.
 The steps of the volume ray casting algorithm are demonstrated in figure \ref{fig:volumeRayCasting}.
 
+
+\newpage
 \begin{figure}[tbh]
     \centering
     \includegraphics[width=0.9\textwidth]{images/Volume_ray_casting.png}
@@ -147,10 +147,10 @@ The steps of the volume ray casting algorithm are demonstrated in figure \ref{fi
     \label{fig:volumeRayCasting}
 \end{figure}
 
-
 This algorithm can be implemented on the GPU by conforming to the traditional rasterization pipeline by using \textit{proxy geometries}.
 The proxy geometries are placed such that the rasterized pixels cover the projection of the scalar field in view space. Thus,
 the ray casting algorithm can be implemented directly in the fragment shader used for these geometries. 
+
 
 
 \bibliography{references}
