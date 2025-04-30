@@ -37,9 +37,21 @@ improve the user's ability to understand and internalize the geometry of cardiac
 \section{Echocardiography}
 Echocardiography examinations provide information about the patient's heart used to diagnose various 
 cardiovascular disorders. Today, echocardiography is used extensively, as the procedure is low-cost and non-invasive \cite{Omerovic2023}.
+In Transthoracic Echocardiography (TTE), the ultrasound probe is positioned externally- on the chest of the patient.
+This is the most common technique for obtaining echocardiograms, and is less invasive than Transesophageal Echocardiography (TEE), where 
+a probe is inserted into the esophagus \cite{Omerovic2023}. In this thesis, we are only concerned with TTE.
 
 In echocardiography, ultrasound waves are transmitted by a probe. The waves propagate through the medium of the patient and echoes are recorded
 by the probe. These echoes are processed by a set of signal processing algorithms to produce the ultrasound image. A technique known as "beamforming" is an essential part of the ultrasound processing chain. 
+There are several imaging \textit{modalities} used in cardiac ultrasound. The most common types are M-mode, 2D and 3D imaging.
+
+In M-mode imaging, only a single ultrasound scan line is processed and displayed. This modality
+may be useful when evaluating the motion or timing of a specific structure with respect to the cardiac cycle \cite{SAUL2015686}.
+Two-dimensional ultrasound allows the generation of cross-sectional images of the anatomy, and is the most common modality for 
+echocardiograms today (CITATION NEEDED). Three-dimensional ultrasound technology produces volumetric data of the anatomy by using two-dimensional transducer arrays.
+These volumes can be produced in real-time and displayed using volume rendering techniques like ray-marching or isosurface generation. One key advantage with 3D echo
+is that volumes can be estimated directly from measurements reducing errors intrinsic in volume estimation from cross-sectional slices \cite{Shah2013}.
+In this thesis, we are mostly concerned with two-dimensional imaging as this is the most available method.
 
 Beamforming technqiques exploit wave interference to combine ultrasound signals from separate transducers. The result of beamforming is a
 greyscale image visualizing anatomical structures. More specifically, the intensity of a pixel in the image correlates with the strength of the reflected echo, influenced by differences
@@ -50,6 +62,13 @@ These images typically contain significant noise and frequently exhibit visual a
 rib blockages, and special probes are designed such that the acoustic field of view may pass in between the ribs of the patient.
 
 \subsection{Standard Viewing Planes}
+The standard viewing planes are specific standardized cross-sections used to assess cardiac health.
+The standard views are the parasternal long axis, the parasternal short axis, the apical four-chamber and 
+the subxiphoid \cite{Shah2013}. These views are obtained by placing the probe at specific positions and orientations which requires
+training and experience. This paradigm is useful in the sense that it provides clear objectives
+for the user to obtain and forms a basis for objective assessment of the quality of the examination.
+
+
 
 
 
@@ -171,6 +190,14 @@ The proxy geometries are placed such that the rasterized pixels cover the projec
 the ray casting algorithm can be implemented directly in the fragment shader used for these geometries. 
 
 \subsection{Isosurface Rendering}
+In isosurface rendering, a triangulated mesh is generated directly from the volume data.
+The mesh is formed by generating vertices at volume cells whose data includes a specific value.
+The mesh can then be rendered using the traditional rasterization pipeline for rendering surfaces, and 
+lighting models can be applied to achieve proper shading. This method is generally cheaper in rendering cost as the
+geometry is directly rendered through projection and rasterization rather than by direct volume rendering such as with
+ray casting.
+
+
 
 \bibliography{references}
 \end{document}
