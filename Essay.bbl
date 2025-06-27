@@ -1,8 +1,12 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Omerovic2023}
 S.~Omerovic and A.~Jain, {\em Echocardiogram}.
 \newblock Treasure Island (FL): StatPearls Publishing, updated 2023 jul 24~ed., 2025.
+
+\bibitem{lenes2008apikal4d}
+K.~Lenes, ``Apikal4d.gif: 3d-loop echocardiogram from the apex.'' {https://commons.wikimedia.org/wiki/File:Apikal4D.gif}, 2008.
+\newblock Licensed under CC BY‑SA 3.0; accessed 2025‑06‑26.
 
 \bibitem{SAUL2015686}
 T.~Saul, S.~D. Siadecki, R.~Berkowitz, G.~Rose, D.~Matilsky, and A.~Sauler, ``M-mode ultrasound applications for the emergency medicine physician,'' {\em The Journal of Emergency Medicine}, vol.~49, no.~5, pp.~686--692, 2015.
@@ -10,6 +14,29 @@ T.~Saul, S.~D. Siadecki, R.~Berkowitz, G.~Rose, D.~Matilsky, and A.~Sauler, ``M-
 \bibitem{Shah2013}
 B.~N. Shah, ``Echocardiography in the era of multimodality cardiovascular imaging,'' {\em Biomed Research International}, vol.~2013, p.~310483, 2013.
 \newblock Epub 2013 Jun 26. PMID: 23878804; PMCID: PMC3708397.
+
+\bibitem{otto2018echocardiography}
+C.~M. Otto, {\em Textbook of Clinical Echocardiography}.
+\newblock Philadelphia, PA: Elsevier, 6~ed., 2018.
+
+\bibitem{unity2025}
+{Unity Technologies}, ``{Unity Real-Time Development Platform}.'' {https://unity.com}, 2025.
+\newblock Accessed: 2025-06-26.
+
+\bibitem{unityShaders2025}
+{Unity Technologies}, ``Shader programs - unity manual.'' {https://docs.unity3d.com/6000.1/Documentation/Manual/Shaders.html}, 2025.
+\newblock Accessed: 2025-06-26.
+
+\bibitem{paszke2019pytorch}
+A.~Paszke, S.~Gross, F.~Massa, A.~Lerer, J.~Bradbury, G.~Chanan, T.~Killeen, Z.~Lin, N.~Gimelshein, L.~Antiga, A.~Desmaison, A.~K{\"o}pf, E.~Yang, Z.~DeVito, M.~Raison, A.~Tejani, S.~Chilamkurthy, B.~Steiner, L.~Fang, J.~Bai, and S.~Chintala, ``Pytorch: An imperative style, high-performance deep learning library,'' in {\em Advances in Neural Information Processing Systems (NeurIPS)}, pp.~8024--8035, 2019.
+
+\bibitem{quigley2009ros}
+M.~Quigley, K.~Conley, B.~P. Gerkey, J.~Faust, T.~Foote, J.~Leibs, R.~Wheeler, and A.~Y. Ng, ``{ROS}: an open-source robot operating system,'' in {\em ICRA Workshop on Open Source Software}, 2009.
+\newblock Available: {https://www.ros.org}.
+
+\bibitem{nrc_artag}
+{National Research Council Canada}, ``Artag - background and description of the original implementation,'' 2004.
+\newblock Accessed: 2025-06-26.
 
 \bibitem{RealTimeRendering}
 T.~Akenine-M{\"o}ller, E.~Haines, and N.~Hoffman, {\em Real-Time Rendering}.
@@ -26,5 +53,8 @@ J.~Krüger and R.~Westermann, ``{GPU}-based interactive visualization techniques
 \bibitem{Hofmann2011}
 F.~Hofmann, ``Volume ray casting,'' 2011.
 \newblock CC BY-SA 3.0, via Wikimedia Commons.
+
+\bibitem{lorensen1987marching}
+W.~E. Lorensen and H.~E. Cline, ``Marching cubes: A high resolution 3d surface construction algorithm,'' in {\em Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques (SIGGRAPH '87)}, pp.~163--169, ACM, 1987.
 
 \end{thebibliography}

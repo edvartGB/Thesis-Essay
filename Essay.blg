@@ -3,46 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Essay.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
+Warning--entry type for "nrc_artag" isn't style-file defined
+--line 180 of file references.bib
 Warning--empty chapter and pages in Omerovic2023
-You've used 7 entries,
+You've used 15 entries,
             1876 wiz_defined-function locations,
-            528 strings with 4597 characters,
-and the built_in function-call counts, 1626 in all, are:
-= -- 160
-> -- 59
+            572 strings with 6279 characters,
+and the built_in function-call counts, 3564 in all, are:
+= -- 323
+> -- 178
 < -- 0
-+ -- 23
-- -- 16
-* -- 96
-:= -- 232
-add.period$ -- 13
-call.type$ -- 7
-change.case$ -- 7
++ -- 67
+- -- 52
+* -- 228
+:= -- 523
+add.period$ -- 27
+call.type$ -- 15
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 84
-empty$ -- 168
-format.name$ -- 16
-if$ -- 410
+cite$ -- 16
+duplicate$ -- 166
+empty$ -- 361
+format.name$ -- 52
+if$ -- 870
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 7
-newline$ -- 30
-num.names$ -- 7
-pop$ -- 32
+int.to.str$ -- 15
+missing$ -- 12
+newline$ -- 60
+num.names$ -- 15
+pop$ -- 82
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 55
+skip$ -- 103
 stack$ -- 0
-substring$ -- 60
-swap$ -- 31
+substring$ -- 132
+swap$ -- 53
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 12
-width$ -- 8
-write$ -- 76
-(There was 1 warning)
+while$ -- 26
+width$ -- 17
+write$ -- 154
+(There were 2 warnings)
