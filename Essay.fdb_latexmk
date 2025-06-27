@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Essay"] 1750932713.20636 "Essay.aux" "Essay.bbl" "Essay" 1750932714.26563 0
+["bibtex Essay"] 1751013143.771 "Essay.aux" "Essay.bbl" "Essay" 1751013582.28208 0
   "./references.bib" 1750932597.45285 8708 3b07072493f8f929b521d08c1a767a72 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Essay.aux" 1750932714.05562 4319 a434cc26ebcae969ae916e3317fb1354 "pdflatex"
+  "Essay.aux" 1751013582.06422 5097 3ec5e7448f6096d6bccbd1a2802fa2d6 "pdflatex"
   (generated)
   "Essay.bbl"
   "Essay.blg"
   (rewritten before read)
-["pdflatex"] 1750932713.29463 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1750932714.26577 0
-  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1750932712.02479 21995 bc747090234732e100f41a93611b2980 ""
+["pdflatex"] 1751013581.03325 "/Users/edvart/Documents/Thesis Essay/Essay.tex" "Essay.pdf" "Essay" 1751013582.28221 0
+  "/Users/edvart/Documents/Thesis Essay/Essay.tex" 1751013580.77629 23652 f376e10d2efed419bc938a0429d8a0bf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -84,16 +84,19 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1739880055.52668 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1739879966 8221426 3bd77e9a42bd20074ffe464f13ccdb98 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Essay.aux" 1750932714.05562 4319 a434cc26ebcae969ae916e3317fb1354 "pdflatex"
-  "Essay.bbl" 1750932713.29301 3191 0869b44990846118f5b3db0239764c96 "bibtex Essay"
-  "Essay.tex" 1750932712.02479 21995 bc747090234732e100f41a93611b2980 ""
+  "Essay.aux" 1751013582.06422 5097 3ec5e7448f6096d6bccbd1a2802fa2d6 "pdflatex"
+  "Essay.bbl" 1751013143.86026 3191 0869b44990846118f5b3db0239764c96 "bibtex Essay"
+  "Essay.tex" 1751013580.77629 23652 f376e10d2efed419bc938a0429d8a0bf ""
   "images/Apikal4D.png" 1750932448.73285 1346632 2bfc00dad1ba0774215d0e8d344ad721 ""
   "images/CutPlanes.png" 1743168809.14167 338487 3d2e699f6f416b75e5af1673ecfc7c7f ""
   "images/Marchingcubes-head.png" 1750931957.62121 145909 77180a983264e51f4e3dcbba37f7fc14 ""
   "images/VolumeRendering.png" 1743166285.65589 383319 74a4b831f58027061e4c8941ca9472a0 ""
   "images/Volume_ray_casting.png" 1743503107.59327 95276 4217ef453a1ff443dd590613fed08a21 ""
   "images/coordinate_systems.png" 1743163290.6817 41397 64519dd639c0e16c2b45d89193928c05 ""
+  "images/cutPlane.png" 1751013007.74873 631529 7332eedf509f376a7a13806180638fda ""
   "images/graphics_pipeline.png" 1743164567.81193 144059 9733c790cc5c9bbdb20ed5a6170f4b33 ""
+  "images/volume1.png" 1751011989.93251 1235203 5dd366517b55e5c2afeaf65f89401e87 ""
+  "images/volume2.png" 1751012018.13147 983550 6362cf260fef485602d81205c9ffcb82 ""
   (generated)
   "Essay.aux"
   "Essay.log"

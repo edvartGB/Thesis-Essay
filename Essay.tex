@@ -15,7 +15,7 @@ The aim of this thesis is to implement an echocardiography guidance and training
 The goal is to provide a tool that is helpful both in learning about how to perform echocardiographic examinations and in actual examinations.
 
 A pre-trained deep neural network- based model will be used to generate guidance signals for the user, and these signals will be integrated into the augmented reality system.  
-Additionally, virtual reference model placed in the virtual environment allows the user to explore cardiac structures and familiarize themselves with
+Additionally, reference models placed in the virtual environment allows the user to explore cardiac structures and familiarize themselves with
 standard views. 
 
 The reference models are based on cardiac MRI data. 
@@ -26,7 +26,7 @@ This ensures that context is not lost when switching between representations.
 
 We wish to investigate whether AR technology coupled with a guidance model can enhance the learning experience of novice echocardiography users.
 This thesis hypothesizes that such technologies can reduce friction in the learning experience through increased interactivity and reduction of the context-switching
-apparent in traditional learning methods. We propose that providing immediate feedback and displaying information directly in the users field of view 
+apparent in traditional learning methods. We propose that providing immediate feedback and displaying information directly in the user's field of view 
 promotes more focused learning where the need to shift attention, both physically and mentally, is reduced. We also aim to investigate if these techniques 
 improve the user's ability to understand and internalize the geometry of cardiac structures.
 
@@ -67,7 +67,7 @@ Insights from the user study may also inform further system improvements and bro
 \section{Echocardiography}
 Echocardiography examinations provide information about the patient's heart used to diagnose various 
 cardiovascular disorders. Today, echocardiography is used extensively, as the procedure is low-cost and non-invasive \cite{Omerovic2023}.
-In Transthoracic Echocardiography (TTE), the ultrasound probe is positioned externally- on the chest of the patient.
+In Transthoracic Echocardiography (TTE), the ultrasound probe is positioned externally, on the chest of the patient.
 This is the most common technique for obtaining echocardiograms, and is less invasive than Transesophageal Echocardiography (TEE), where 
 a probe is inserted into the esophagus \cite{Omerovic2023}. In this thesis, we are only concerned with TTE.
 
@@ -92,13 +92,13 @@ These volumes can be produced in real-time and displayed using volume rendering 
 is that volumes can be estimated directly from measurements reducing errors intrinsic in volume estimation from cross-sectional slices \cite{Shah2013}.
 In this thesis, we are mostly concerned with two-dimensional imaging as this is the most available method.
 
-Beamforming technqiques exploit wave interference to combine ultrasound signals from separate transducers. The result of beamforming is a
+Beamforming techniques exploit wave interference to combine ultrasound signals from separate transducers. The result of beamforming is a
 greyscale image visualizing anatomical structures. More specifically, the intensity of a pixel in the image correlates with the strength of the reflected echo, influenced by differences
 in acoustic impedance.
 
 Due to the intricacies of acoustic wave propagation and limitations in beamforming, ultrasound images are generally more difficult to interpret than those obtained by Computed Tomography or Magnetic Resonance.
-These images typically contain significant noise and frequently exhibit visual artefacts such as \textit{abberations} and \textit{reverberations}. Echocardiography is specifically limited due to 
-rib blockages, and the probes are designed such that the acoustic field of view may pass in between the ribs of the patient.
+These images typically contain significant noise and frequently exhibit visual artefacts such as \textit{aberrations} and \textit{reverberations}. Echocardiography is specifically limited due to 
+acoustic shadowing from ribs, and the probes are designed such that the acoustic field of view may pass in between the ribs of the patient.
 
 \subsection{Standard Viewing Planes}
 The standard viewing planes are specific standardized cross-sections used to assess cardiac health.
@@ -115,12 +115,12 @@ These views are obtained by placing the probe at specific positions and orientat
 training and experience. This paradigm is useful as it provides well-defined goals
 for the user to reach and forms a basis for objective assessment of the quality of the examination.
 
-For the scope of this thesis, we choose to only consider views from the apical window.
+For the scope of this thesis, we choose to consider only views from the apical window.
 This is done for simplicity, as all views can then be obtained by rotation of the probe at a single location 
 on the thorax.
 
 Views in the apical window are obtained by placing the probe at the \textit{apex} of the left ventricle \cite{otto2018echocardiography}.
-With the probe in the correct location for the apical window, all apical views can be obtained by rotating the probe in place
+Once the probeis correctly positioned at the apical window, all apical views can be obtained by rotating the probe in place
 %, as shown in figure \ref{fig:apicalViews}.
 % \begin{figure}[h]
 %     \centering
@@ -170,13 +170,13 @@ The images are then distributed within the system with ROS, to be used as input 
 and for display in the Unity-powered AR system.
 
 The reference models will mainly be represented as surface meshes and scalar fields. These will
-be visualized in unity the built-in mesh renderer as well as custom surface and volume renderers.
+be visualized in Unity using the built-in mesh renderer as well as custom surface and volume renderers.
 A custom animation system implementation will also be used to handle smooth rendering of 4D reference models.
 
 To track the position and orientation of the ultrasound probe, AR tags will be used.
 AR tags are square fiducial markers in black and white with known patterns and dimensions \cite{nrc_artag}. These markers
 are identified in camera images using computer vision techniques and their relative position and orientation
-can be computer based on the pixel positions of marker keypoints.
+can be computed based on the pixel positions of marker keypoints.
 
 
 
@@ -186,7 +186,7 @@ can be computer based on the pixel positions of marker keypoints.
 \section{Computer Graphics}
 Computer graphics (CG) is the study of digitally generating images, videos, and other types of graphical content.
 The type of visual content generated can broadly be categorized into photorealistic and non-photorealistic CG.
-The applications of CG techniques are broad- including scientific visualizations, video games, special effects and other types of informative or artistic content.
+The applications of CG techniques are broad, including scientific visualizations, video games, special effects and other types of informative or artistic content.
 
 Algorithms in computer graphics typically operate on objects of a three-dimensional (3D) \textit{scene}. The scene is a high-level description of the virtual environment used to synthesize the visual content.
 The objects in the scene may represent things like solid bodies, cameras, light sources or arbitrary volumetric data.
@@ -216,10 +216,10 @@ In real-time computer graphics, the graphics pipeline can generally be viewed as
 The application part of the pipeline generally runs on the CPU, and is concerned with defining the structure of the scene, setting up rendering commands and other pre-processing procedures.
 The application defines a set of geometry \textit{primitives} which are sent further down the pipeline. These primitives
 are geometrical shapes like triangles and lines, defined by coordinates and indices defining the surface of the models to be processed and rendered by the GPU.
-The data strutures representing these primitives are typically defined in a local coordinate system referred to as \textit{object space}, and may include additional information such as surface normals and texture coordinates. The data required
+The data structures representing these primitives are typically defined in a local coordinate system referred to as \textit{object space}, and may include additional information such as surface normals and texture coordinates. The data required
 in this stage depends on the algorithms employed in the \textit{pixel processing} stage of the pipeline.
 
-The geometry processing stage is executed on the GPU, where geometrical operations like morphing and subdividing (tesselation) may be performed.
+The geometry processing stage is executed on the GPU, where geometrical operations like morphing and subdividing (tessellation) may be performed.
 An essential part of the geometry processing stage is the \textit{vertex shader}, which is a programmable procedure which processes each 3D vertex (position) of the given mesh.
 
 In a typical rendering pipeline, the vertex shader transforms the vertex coordinates from \textit{object space} to \textit{screen space} through perspective projection, such that
@@ -237,13 +237,13 @@ determine the set of pixels covered by the projection of the primitive.
 
 Finally, the colors of the rasterized pixels are determined in the pixel processing stage.
 The GPU program defining the algorithm used for shading pixels is referred to as the \textit{fragment shader}.
-The fragment shader is executed in parallell, for each rasterized pixel. With modern GPUs and graphics frameworks, fragment shaders are highly programmable, and different shaders may be used to render different objects.
+The fragment shader is executed in parallel, for each rasterized pixel. With modern GPUs and graphics frameworks, fragment shaders are highly programmable, and different shaders may be used to render different objects.
 
 \newpage
 
 \subsection{Volume Rendering}
 The traditional raster-based rendering technique is not well-suited for rendering phenomena that are volumetric in nature.
-Special rendering techniques have been developed to render physically occuring phenomena like smoke, clouds or fog. These techniques
+Special rendering techniques have been developed to render physically occurring phenomena like smoke, clouds or fog. These techniques
 may also be used to visualize three-dimensional scientific data, like that captured by fluid simulation or medical imaging.
 
 \begin{figure}[tbh]
@@ -264,7 +264,7 @@ data set.
     \label{fig:cutPlanes}
 \end{figure}
 In the fragment shader, the world space position of each fragment is used to sample the volumetric data set. The sampled value can then be used to determine the final color of the pixel via some transfer function.
-This method is interpret and implement in the rasterization pipeline, requiring only a simple modification to the fragment shader. 
+This method can be implemented in the rasterization pipeline, only requiring modifications to the fragment shader. 
 
 \subsubsection{Volume Ray Casting}
 Volume Ray Casting is a rendering technique used to directly render volumetric scalar fields.
@@ -304,7 +304,7 @@ the ray casting algorithm can be implemented directly in the fragment shader use
 \subsection{Isosurface Rendering}
 In isosurface rendering, a triangulated mesh is generated directly from the volume data.
 The mesh is formed by generating vertices at volume cells whose data includes a specific value.
-This value is refered to as the \textit{isovalue}
+This value is referred to as the \textit{isovalue}
 The mesh can then be rendered using the traditional rasterization pipeline for rendering surfaces, and 
 lighting models can be applied to achieve proper shading. This method is generally cheaper in rendering cost as the
 geometry is directly rendered through projection and rasterization rather than by direct volume rendering such as with
@@ -320,6 +320,48 @@ data such as that obtained by MRI. An example visualization is shown in figure \
     \caption{A visualization of a mesh generated by the marching cubes algorithm on MRI data of a human head.}
     \label{fig:marchingCubesMRI}
 \end{figure}
+
+
+\subsection{Preliminary Engine Work and Data Collection}
+Some work has been done in preparation for this project to perform volumetric
+rendering in Unity using custom shaders. Both the volume ray casting method and 
+cut planes were implemented, with color mapping and opacity transfer functions.
+The effect of different opacity transfer functions is shown in figure \ref{fig:transferFunction1} and 
+\ref{fig:transferFunction2}.
+
+\begin{figure}[tbh]
+    \centering
+    \begin{minipage}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/volume1.png}
+        \caption{Volume rendering of MRI data using the ray casting implementation.}
+        \label{fig:transferFunction1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/volume2.png}
+        \caption{Rendering of the same volume using a different opacity transfer function.}
+        \label{fig:transferFunction2}
+    \end{minipage}
+\end{figure}
+
+\newpage
+
+Volumetric ray casting is used to render the overall 3D reference models, 
+while cut planes allow inspection of specific internal structures. These cut planes are similar
+in nature to images produced by 2D ultrasound and may aid in understanding the relationship 
+between anatomical structures of the heart and their ultrasound representations.
+An example of this (prototype) is shown in figure \ref{fig:cutPlanes}.
+
+\begin{figure}[tbh]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/cutPlane.png}
+    \caption{Cut plane implementation alongside volume rendering.}
+    \label{fig:cutPlanes}
+\end{figure}
+
+
 
 
 \bibliography{references}
